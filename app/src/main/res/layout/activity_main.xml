@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.byc.teststrictmode.MainActivity">
+
+    <Button
+        android:id="@+id/btn_network"
+        style="@style/BtnStyle"
+        android:text="主线程--网络"/>
+
+    <Button
+        android:id="@+id/btn_diskreadwrite"
+        style="@style/BtnStyle"
+        android:text="主线程--磁盘读写"/>
+    <Button
+        android:id="@+id/btn_noteslowcall"
+        style="@style/BtnStyle"
+        android:text="主线程--执行耗时"/>
+
+    <Button
+        android:id="@+id/btn_activityleak"
+        style="@style/BtnStyle"
+        android:text="主线程--内存泄漏"/>
+    <Button
+        android:id="@+id/btn_leakedclosableobject"
+        style="@style/BtnStyle"
+        android:text="主线程--资源没有正确关闭"/>
+    <Button
+        android:id="@+id/btn_classinstancelimit"
+        style="@style/BtnStyle"
+        android:text="主线程--类实例上限-协助检查内存泄漏"/>
+</LinearLayout>
